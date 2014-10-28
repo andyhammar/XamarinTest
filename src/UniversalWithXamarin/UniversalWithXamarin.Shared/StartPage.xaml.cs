@@ -18,7 +18,6 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 using CommonLib;
-using UniversalWithXamarin.Annotations;
 
 namespace UniversalWithXamarin
 {
@@ -74,7 +73,6 @@ namespace UniversalWithXamarin
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        [NotifyPropertyChangedInvocator]
         private void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             var handler = PropertyChanged;
