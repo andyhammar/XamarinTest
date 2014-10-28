@@ -67,7 +67,10 @@ namespace Wordie.Droid
 			public const int MyButton = 2131099648;
 			
 			// aapt resource value: 0x7f060001
-			public const int MyTextView = 2131099649;
+			public const int MyProgress = 2131099649;
+			
+			// aapt resource value: 0x7f060002
+			public const int MyTextView = 2131099650;
 			
 			static Id()
 			{

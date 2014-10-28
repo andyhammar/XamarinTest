@@ -27,12 +27,18 @@ namespace Wordie.Droid
 
             button.Click += async delegate
             {
+                var progress = FindViewById<ProgressBar>(Resource.Id.MyProgress);
+                progress.Visibility = ViewStates.Visible;
+                
+
                 //button.Text = string.Format("{0} clicks!", count++);
                 var fetcher = new WebFetcher();
                 var word = await fetcher.GetWord();
 
                 var textView = FindViewById<TextView>(Resource.Id.MyTextView);
                 textView.Text = word;
+
+                progress.Visibility = ViewStates.Invisible;                
             };
 
         }
