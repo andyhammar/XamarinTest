@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Get word!</string>
+    <string name="ApplicationName">Wordie.Droid</string>
+</resources>
