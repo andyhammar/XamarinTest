@@ -19,7 +19,7 @@ namespace Forms.WinPhone
         {
             InitializeComponent();
 
-            Forms.Init();
+            Xamarin.Forms.Forms.Init();
             Content = Forms.App.GetMainPage().ConvertPageToUIElement(this);
         }
     }
