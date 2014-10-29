@@ -246,6 +246,33 @@
                    TextAlignment="Center"
                    FontWeight="Light"
                    TextWrapping="WrapWholeWords" />
+        
+        <StackPanel Margin="120,49,0,0" Orientation="Horizontal" Grid.Row="1">
+
+            <TextBlock x:Name="WordTextBlock"
+        		FontSize="56"
+        		Text="WOTD: "
+        		VerticalAlignment="Top"
+        		HorizontalAlignment="Left"
+        		FontFamily="Segoe UI Light"
+        		TextAlignment="Center"
+        		FontWeight="Light"
+        		TextWrapping="WrapWholeWords" />
+            <TextBlock x:Name="WordTextBlock"
+        		FontSize="56"
+        		Text="{Binding WordOfTheDay}"
+        		VerticalAlignment="Top"
+        		HorizontalAlignment="Left"
+        		FontFamily="Segoe UI Light"
+        		TextAlignment="Center"
+        		FontWeight="Light"
+        		TextWrapping="WrapWholeWords" />
+
+
+
+        </StackPanel>
+
+
 
         <local:TestUserControl x:Name="Bottom"
                                HorizontalAlignment="Left"
